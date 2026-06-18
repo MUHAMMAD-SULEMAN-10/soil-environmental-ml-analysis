@@ -1,0 +1,84 @@
+{
+  "clay_model": {
+    "r2": 0.8308,
+    "mae": 3.105,
+    "features": [
+      "Depth_cm",
+      "Rainfall_mm",
+      "Temperature_C",
+      "Slope_pct",
+      "Land_Use",
+      "Parent_Material"
+    ],
+    "feature_importance": {
+      "Depth_cm": 0.7537,
+      "Rainfall_mm": 0.1392,
+      "Slope_pct": 0.0553,
+      "Temperature_C": 0.0277,
+      "Land_Use_Forest": 0.0034,
+      "Land_Use_Cropland": 0.0034,
+      "Parent_Material_Alluvium": 0.0033,
+      "Land_Use_Grassland": 0.0031,
+      "Land_Use_Wetland": 0.003,
+      "Parent_Material_Residuum": 0.003,
+      "Parent_Material_Loess": 0.0027,
+      "Parent_Material_Glacial Till": 0.0023
+    }
+  },
+  "fertility_model": {
+    "accuracy": 0.7533,
+    "classification_report": {
+      "High": {
+        "precision": 0.7884615384615384,
+        "recall": 0.5774647887323944,
+        "f1-score": 0.6666666666666666,
+        "support": 71.0
+      },
+      "Low": {
+        "precision": 0.8260869565217391,
+        "recall": 0.7307692307692307,
+        "f1-score": 0.7755102040816326,
+        "support": 78.0
+      },
+      "Medium": {
+        "precision": 0.7150837988826816,
+        "recall": 0.847682119205298,
+        "f1-score": 0.7757575757575758,
+        "support": 151.0
+      },
+      "accuracy": 0.7533333333333333,
+      "macro avg": {
+        "precision": 0.7765440979553198,
+        "recall": 0.7186387129023077,
+        "f1-score": 0.739311482168625,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 0.7613106849024994,
+        "recall": 0.7533333333333333,
+        "f1-score": 0.7498750773036487,
+        "support": 300.0
+      }
+    },
+    "features": [
+      "Organic_Matter_pct",
+      "pH",
+      "Nitrogen_mgkg",
+      "Phosphorus_mgkg",
+      "Potassium_mgkg",
+      "CEC_cmolkg",
+      "Clay_pct",
+      "Moisture_pct"
+    ],
+    "feature_importance": {
+      "Nitrogen_mgkg": 0.2741,
+      "Organic_Matter_pct": 0.2221,
+      "pH": 0.1137,
+      "CEC_cmolkg": 0.1132,
+      "Phosphorus_mgkg": 0.0865,
+      "Clay_pct": 0.0719,
+      "Potassium_mgkg": 0.0622,
+      "Moisture_pct": 0.0564
+    }
+  }
+}
