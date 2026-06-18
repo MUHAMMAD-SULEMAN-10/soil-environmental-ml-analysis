@@ -130,12 +130,19 @@ Project structure
 
 soil_ml_project/
 ├── app.py                 # Streamlit interface (main entry point)
+
 ├── generate_data.py       # Builds the synthetic dataset
+
 ├── train_model.py         # Trains both models, saves .pkl + metrics.json
+
 ├── soil_data.csv          # Generated dataset
+
 ├── clay_model.pkl         # Trained Random Forest regressor
+
 ├── fertility_model.pkl    # Trained Random Forest classifier
+
 ├── metrics.json           # Saved performance metrics + feature importances
+
 └── requirements.txt
 
 Run locally
